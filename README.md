@@ -22,7 +22,7 @@
    python -m venv venv            # Създаване на виртуална среда (Windows: python -m venv venv, за Linux/Mac: python3 -m venv venv)
    venv\Scripts\activate          # За Windows (за Linux/Mac: source venv/bin/activate)
    cd notes_backend
-   pip install django djangorestframework djangorestframew  ork-simplejwt django-cors-headers
+   pip install django djangorestframework djangorestframework-simplejwt django-cors-headers
    python manage.py makemigrations
    python manage.py migrate
    python manage.py runserver
