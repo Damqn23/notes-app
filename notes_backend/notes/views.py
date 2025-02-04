@@ -6,19 +6,19 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from django.contrib.auth.models import User
 
-# ViewSet за CRUD на записки – само автентикираните потребители имат достъп
+
 class NoteViewSet(viewsets.ModelViewSet):
     serializer_class = NoteSerializer
     permission_classes = [permissions.IsAuthenticated]
 
     def get_queryset(self):
-        # Връща само записките на текущия потребител
+        
         return Note.objects.filter(user=self.request.user)
 
     def perform_create(self, serializer):
         serializer.save(user=self.request.user)
 
-# API View за регистрация на нов потребител
+
 class RegisterView(APIView):
     permission_classes = [permissions.AllowAny]
 

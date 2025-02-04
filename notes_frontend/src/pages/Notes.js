@@ -1,4 +1,3 @@
-// src/pages/Notes.js
 import React, { useState, useEffect, useCallback } from 'react';
 import axios from 'axios';
 import { useNavigate, Link } from 'react-router-dom';
