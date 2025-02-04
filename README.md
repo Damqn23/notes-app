@@ -12,9 +12,10 @@
 ## Инструкции за локална инсталация и стартиране
 
 1. **Клонирайте репозиториото и отворете терминал в основната папка:**
-
+```bash
    git clone https://github.com/Damqn23/notes_app.git
    cd notes_app
+
 
 2. Backend (Django):
 
