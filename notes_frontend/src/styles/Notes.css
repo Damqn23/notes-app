@@ -1,0 +1,84 @@
+/* src/styles/Notes.css */
+.notes-container {
+    background: #fff;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .notes-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 700;
+  }
+  
+  .notes-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .notes-container button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5563DE;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .notes-container button:hover {
+    background-color: #3b48b0;
+  }
+  
+  .notes-container ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .note {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fafafa;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .note:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  
+  .note h3 {
+    margin: 0 0 10px;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .note p {
+    margin: 0 0 10px;
+    color: #555;
+  }
+  
+  .note small {
+    display: block;
+    margin-bottom: 10px;
+    color: #888;
+  }
+  
+  .note-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
